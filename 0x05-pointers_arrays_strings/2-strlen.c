@@ -1,4 +1,4 @@
-  include "main.h"
+#include<stdio.h>
 
   /** 
    * _strlen - find the length of a string 
