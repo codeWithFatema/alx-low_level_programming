@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * swap_int - Swapping variables
  * @a: pointer 1
@@ -12,5 +11,4 @@ void swap_int(int *a, int *b)
     swap = *a;
     *a = *b;
     *b = swap;
-}
- 
+} 
