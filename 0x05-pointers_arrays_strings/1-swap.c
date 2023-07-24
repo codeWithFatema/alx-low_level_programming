@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * swap_int - Swapping variables
  * @a: pointer 1
