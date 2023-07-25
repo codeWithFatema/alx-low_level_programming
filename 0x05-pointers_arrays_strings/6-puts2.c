@@ -1,15 +1,25 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * puts2 - prints one char out of 2 of a string
+ * followed by a new line
+ * @str: string to print the chars from
  */
-int main(void)
+void puts2(char *str)
 {
-    char *str;
+	int len, i;
 
-    str = "0123456789";
-    puts2(str);
-    return (0);
+	len = 0;
+
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+
+	for (i = 0; i < len; i += 2)
+	{
+		_putchar(str[i]);
+	}
+
+	_putchar('\n');
 }
