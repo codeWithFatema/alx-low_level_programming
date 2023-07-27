@@ -1,6 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 
+/* Function prototype for _strcat */
+char *_strcat(char *dest, const char *src);
+
 /**
  * main - check the code
  *
