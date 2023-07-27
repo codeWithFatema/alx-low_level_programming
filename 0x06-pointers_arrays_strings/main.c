@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /* Function prototype for _strcat */
-char *_strcat(char *dest, const char *src);
-
+char *_strcat(char *dest, char *src)
 /**
  * main - check the code
  *
