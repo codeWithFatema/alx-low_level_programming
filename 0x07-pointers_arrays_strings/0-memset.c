@@ -1,13 +1,19 @@
-#include <stddef.h>
+#include "main.h"
 
-char* _memset(char* s, char b, unsigned int n) {
-    char* ptr = s; // Keep a reference to the start of the memory area
+/**
+ * _memset - fills memory with a constant byte.
+ * @s: first bytes of the memory
+ * @b: constant byte b
+ * @n:  bytes of the memory area pointed to by s
+ * Return: pointer to the resulting string dests
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i;
 
-    // Fill the first n bytes of the memory area with the constant byte b
-    for (unsigned int i = 0; i < n; i++) {
-        *s = b;
-        s++;
-    }
-
-    return ptr; // Return the pointer to the memory area s
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
+	return (s);
 }
