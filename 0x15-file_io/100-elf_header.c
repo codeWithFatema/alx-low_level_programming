@@ -16,7 +16,6 @@ void print_osabi(unsigned char *e_ident);
 void print_type(unsigned int e_type, unsigned char *e_ident);
 void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
-
 /**
  * check_elf - Checks if a file is an ELF file.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
@@ -39,7 +38,6 @@ void check_elf(unsigned char *e_ident)
 		}
 	}
 }
-
 /**
  * print_magic - Prints the magic numbers of an ELF header.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
@@ -247,7 +245,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
  * close_elf - Closes an ELF file.
  * @elf: The file descriptor of the ELF file.
  *
- * Description: If the file can't be closed - exit code 98.
+ * Description: If the file cannot be closed - exit code 98.
  */
 void close_elf(int elf)
 {
@@ -262,12 +260,12 @@ void close_elf(int elf)
 /**
  * main - Displays the information contained in the
  * ELF header at the start of an ELF file.
- * @argc: The num of argum supplied to the program.
+ * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
  *
  * Return: 0 on success.
  *
- * Description: If the file isn't  an ELF File or
+ * Description: If the file is not an ELF File or
  * the function fails - exit code 98.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
